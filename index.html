@@ -1,83 +1,158 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Furkan Aydın - Portfolio</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 2em; background: #f8f8f8; }
-        header { text-align: center; padding: 1em; }
-        section { margin-bottom: 2em; background: white; padding: 1em; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h1, h2 { color: #333; }
-        .project { margin-top: 1em; }
-        a { color: #0077cc; text-decoration: none; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Furkan Aydın - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      background: #0e0e0e;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    header {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 4rem;
+    }
+    section {
+      padding: 80px 20px;
+    }
+    .skill-badge {
+      margin: 5px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Furkan Aydın</h1>
-        <p>Software Developer | C# | Unity | Flutter | Cybersecurity</p>
-    </header>
 
-    <section>
-        <h2>About Me</h2>
-        <p>
-I graduated from the Computer Programming department at Van Yüzüncü Yıl University.<br><br>
-I'm a self-taught software developer with a strong passion for learning and building. My primary focus is on C# and .NET, where I specialize in object-oriented programming (OOP).<br><br>
-I actively develop 2D and 3D games using Unity. One of my current projects, a 2D game called <b>Brain Clash</b>, is in the testing phase. I’m also working on a 3D game.<br><br>
-I have basic experience with Unreal Engine, training in Flutter, and hands-on knowledge of Microsoft SQL Server. I’ve worked on educational cybersecurity simulations.<br><br>
-Currently improving my Python skills and excited to build high-performance software solutions.
-</p>
-    </section>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">furkanaydin.dev</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <section>
-        <h2>Skills</h2>
-        
-<ul>
-<li>C#</li>
-<li>Python</li>
-<li>.NET / OOP</li>
-<li>Unity (2D/3D)</li>
-<li>Unreal Engine (Beginner)</li>
-<li>Flutter, Dart</li>
-<li>SQL Server</li>
-<li>Windows API</li>
-</ul>
+  <!-- Hero -->
+  <header>
+    <h1>I'm Furkan Aydın</h1>
+    <p class="lead">Software Developer | C# | Unity | Flutter | Cybersecurity</p>
+  </header>
 
-    </section>
+  <!-- About -->
+  <section id="about" class="bg-dark">
+    <div class="container">
+      <h2 class="text-white">About Me</h2>
+      <p>I graduated from the Computer Programming department at Van Yüzüncü Yıl University. I'm a self-taught software developer with a strong passion for learning and building.</p>
+      <p>Currently improving my Python skills and excited to build high-performance software solutions.</p>
+    </div>
+  </section>
 
-    <section>
-        <h2>Projects</h2>
-        
-<div class="project">
-  <h3>Brain Clash</h3>
-  <p><b>Description:</b> A brain training and reflex game that tests memory, focus, and speed.</p>
-  <p><b>Technologies:</b> Unity Engine, C#</p>
-  <p><b>Role:</b> Developer</p>
-</div>
-<div class="project">
-  <h3>RGB Finder</h3>
-  <p><b>Description:</b> Detects real-time colors using the camera and shows HEX/RGB values.</p>
-  <p><b>Technologies:</b> Flutter, Dart, Camera API, SharedPreferences</p>
-  <p><b>Role:</b> Developer</p>
-</div>
-<div class="project">
-  <h3>Credential Guard</h3>
-  <p><b>Description:</b> Captures webcam photo and creates security logs on failed login attempts in Windows.</p>
-  <p><b>Technologies:</b> C#, Windows API</p>
-  <p><b>Role:</b> Developer</p>
-</div>
+  <!-- Experience -->
+  <section id="experience" class="bg-secondary">
+    <div class="container">
+      <h2>Experience</h2>
+      <ul>
+        <li>Developed 2D and 3D games using Unity.</li>
+        <li>Worked on educational cybersecurity simulations.</li>
+        <li>Basic hands-on experience with Microsoft SQL Server.</li>
+      </ul>
+    </div>
+  </section>
 
-    </section>
+  <!-- Education -->
+  <section id="education" class="bg-dark">
+    <div class="container">
+      <h2>Education</h2>
+      <p>Van Yüzüncü Yıl University – Computer Programming</p>
+    </div>
+  </section>
 
-    <section>
-        <h2>Contact</h2>
-        
-<ul>
-<li>Email: <a href="mailto:furkan.aydi@yandex.com">furkan.aydi@yandex.com</a></li>
-</ul>
+  <!-- Skills -->
+ <section id="skills" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4">Skills</h2>
+    <div class="row justify-content-center">
+      <div class="col-4 col-md-2 mb-4">
+        <img src="icons/csharp.png" alt="C#" class="img-fluid" title="C#">
+        <p class="mt-2">C#</p>
+      </div>
+      <div class="col-4 col-md-2 mb-4">
+        <img src="icons/dotnet.png" alt=".NET" class="img-fluid" title=".NET / OOP">
+        <p class="mt-2">.NET / OOP</p>
+      </div>
+      <div class="col-4 col-md-2 mb-4">
+        <img src="icons/python.png" alt="Python" class="img-fluid" title="Python">
+        <p class="mt-2">Python</p>
+      </div>
+      <div class="col-4 col-md-2 mb-4">
+        <img src="icons/unity.png" alt="Unity" class="img-fluid" title="Unity 2D/3D">
+        <p class="mt-2">Unity</p>
+      </div>
+      <div class="col-4 col-md-2 mb-4">
+        <img src="icons/flutter.png" alt="Flutter" class="img-fluid" title="Flutter / Dart">
+        <p class="mt-2">Flutter</p>
+      </div>
+      <div class="col-4 col-md-2 mb-4">
+        <img src="icons/unreal.png" alt="Unreal Engine" class="img-fluid" title="Unreal Engine">
+        <p class="mt-2">Unreal</p>
+      </div>
+      <div class="col-4 col-md-2 mb-4">
+        <img src="icons/sqlserver.png" alt="SQL Server" class="img-fluid" title="SQL Server">
+        <p class="mt-2">SQL Server</p>
+      </div>
+      <div class="col-4 col-md-2 mb-4">
+        <img src="icons/windows.png" alt="Windows API" class="img-fluid" title="Windows API">
+        <p class="mt-2">Windows API</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    </section>
+
+
+  <!-- Projects -->
+  <section id="projects" class="bg-dark">
+    <div class="container">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Brain Clash</strong> – A 2D Unity Game currently in testing phase.</li>
+        <li>Unreal Engine prototype for a horror puzzle game.</li>
+        <li>Flutter App to detect real-time color and convert to RGB/HEX.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-secondary">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: furkanaydin@example.com</p>
+      <p>GitHub: <a href="https://github.com/furkanaydi" target="_blank">github.com/furkanaydi</a></p>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
