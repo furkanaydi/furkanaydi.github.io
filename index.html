@@ -55,10 +55,13 @@
   </nav>
 
   <!-- Hero -->
-  <header>
-    <h1>I'm Furkan Aydın</h1>
-    <p class="lead">Software Developer | C# | Unity | Flutter | Cybersecurity</p>
-  </header>
+  <header class="hero">
+  <div class="hero-overlay">
+    <h1 class="hero-title mb-4">I'm Furkan AYDIN</h1>
+    <p>Software Developer | C# | Unity | Flutter | Cybersecurity</p>
+  </div>
+</header>
+
 
   <!-- About -->
 <section id="about" class="bg-dark">
@@ -86,25 +89,54 @@
 </section>
 
 
-  <!-- Experience -->
-  <section id="experience" class="bg-secondary">
-    <div class="container">
-      <h2>Experience</h2>
-      <ul>
-        <li>Developed 2D and 3D games using Unity.</li>
-        <li>I worked on security simulations with Kali Linux Operating System.</li>
-        <li>Basic hands-on experience with Microsoft SQL Server.</li>
-      </ul>
-    </div>
-  </section>
+ <!-- Experience -->
+<section id="experience">
+  <div class="container">
+    <h2 class="text-white">Experience</h2>
 
-  <!-- Education -->
-  <section id="education" class="bg-dark">
-    <div class="container">
-      <h2>Education</h2>
-      <p>Van Yüzüncü Yıl University – Computer Programming</p>
+    <div class="timeline">
+
+      <div class="timeline-entry">
+       <h4>IT Specialist – Martı Group <span style="float:right;">2023 - 2024</span></h4>
+      <p>Worked as an IT Specialist responsible for managing the company's technical infrastructure, software systems, and web presence.</p>
+      <p>Led the design and deployment of the corporate website <b>martitmgd.com</b>, including WordPress setup, hosting configuration, and service structuring.</p>
+      </div>  
+
+      <div class="timeline-entry">
+        <h4>Unity Game Developer <span style="float:right;"></span></h4>
+        <p>Developed 2D and 3D games using Unity. Currently working on a 3D game and a 2D release-ready game named <b>Brain Clash</b>.</p>
+        <p>Built gameplay systems, UI interactions, pattern logic, and multiplayer mechanics using C# and OOP principles.</p>
+      </div>
+
+      <div class="timeline-entry">
+        <h4>Freelance Web Developer <span style="float:right;"></span></h4>
+        <p>Designed and launched responsive WordPress websites for <b>rlog.com.tr</b> and <b>martitmgd.com</b>.</p>
+        <p>Managed hosting, SEO optimization, custom service pages, and mobile-first design principles.</p>
+      </div>
+
+      <div class="timeline-entry">
+        <h4>Cybersecurity Researcher <span style="float:right;"></span></h4>
+        <p>Worked on ethical firewall evasion technique simulations using Kali Linux and sandbox environments.</p>
+        <p>Created basic payload test tools and analyzed detection behaviors for educational purposes.</p>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
+
+<!-- Education -->
+<section id="education" class="bg-dark">
+  <div class="container">
+    <h2 class="text-white">Education</h2>
+    <p class="text-white">
+      <strong>Van Yüzüncü Yıl University</strong> – Computer Programming 
+      <span style="float:right; font-size: 1.5em; color: #ffffff;">2020 – 2022</span>
+    </p>
+  </div>
+</section>
+
+
 
   <!-- Skills -->
  <section id="skills" class="py-5 bg-light">
@@ -150,16 +182,26 @@
 
 
   <!-- Projects -->
-  <section id="projects" class="bg-dark">
-    <div class="container">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Brain Clash</strong> – A 2D Unity Game currently in testing phase.</li>
-        <li>Unreal Engine prototype for a horror puzzle game.</li>
-        <li>Flutter App to detect real-time color and convert to RGB/HEX.</li>
-      </ul>
+  <section id="projects" class="bg-dark text-white py-5">
+  <div class="container">
+    <h2 class="mb-4">Projects</h2>
+
+    <!-- Martı IT MGD -->
+    <div class="project mb-5">
+      <h4>Martı TMGD</h4>
+      <p>Developed a modern, responsive, corporate WordPress site for <b>martitmgd.com</b>. The site includes dynamic service pages, a multilingual structure, and SEO optimization tailored for an IT consultancy firm.</p>
+      <a href="https://martitmgd.com" target="_blank" class="btn btn-outline-info mt-2">Visit Website</a>
     </div>
-  </section>
+
+    <!-- RLOG Lojistik -->
+    <div class="project">
+      <h4>RLOG Lojistik</h4>
+      <p>Designed and implemented <b>rlog.com.tr</b>, a clean and user-friendly logistics company website using WordPress. Includes custom service sections, contact forms, and mobile optimization features.</p>
+      <a href="https://rlog.com.tr" target="_blank" class="btn btn-outline-info mt-2">Visit Website</a>
+    </div>
+
+  </div>
+</section>
 
   <!-- Contact -->
   <section id="contact" class="bg-secondary">
